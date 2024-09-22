@@ -1,102 +1,71 @@
-# financial-and-survey-analysis
-Overview: In this project, I conducted a comprehensive data analysis for a non-profit organization aiming to improve event attendance, membership engagement, and donation levels. The analysis involved designing a 27-question survey, which garnered 264 responses, and analyzing the organization’s financial data from January 2022 to August 2024. The goal was to identify key factors that influence member participation and financial contributions, ultimately guiding strategic decision-making.
+# Financial-And-Survey-Analysis
+## **Overview**  
+In this project, I conducted a comprehensive data analysis for a non-profit organization with the aim of improving event attendance, membership engagement, and donation levels. The analysis included designing a 27-question survey that received 264 responses and analyzing the organization’s financial data from January 2022 to August 2024. The goal was to identify key factors influencing member participation and financial contributions, ultimately guiding strategic decision-making.
 
-Survey Analysis: The survey focused on understanding the preferences and behaviors of the organization's members and supporters. Key areas of interest included event attendance, membership status, donation habits, and communication channels. The insights gained from this analysis informed the organization's marketing and engagement strategies, ensuring they align with the needs and interests of their community.
+## **Survey Analysis**  
+The survey focused on understanding the preferences and behaviors of the organization's members and supporters. Key areas of interest included event attendance, membership status, donation habits, and preferred communication channels. The insights gained from this analysis helped align the organization's marketing and engagement strategies with the needs and interests of its community.
 
-Machine Learning Models: To gain deeper insights and predict key outcomes, I employed a variety of machine learning models, including:
+## **Machine Learning Models**
 
-Random Forest Model:
+### 1. **Random Forest Model**  
+   - **Purpose**: Predict membership retention and donation likelihood based on survey responses.
+   - **Performance**:
+     - **Accuracy**: 77.36%  
+     - **Class 0 (Majority Class)**:
+       - Precision: 0.78
+       - Recall: 0.95
+       - F1-Score: 0.85  
+     - **Class 1 (Minority Class)**:
+       - Precision: 0.75
+       - Recall: 0.38
+       - F1-Score: 0.50  
+   - **Insights**: The model performed well in predicting outcomes for the majority class but struggled with the minority class, highlighting potential class imbalance. Further model tuning or class balancing techniques may improve results for the minority class.
 
-Purpose: To predict membership retention and donation likelihood based on survey responses.
+### 2. **Regularized Linear Regression Model**  
+   - **Purpose**: Assess the relationship between multiple features (e.g., age, event attendance, donation history) and their impact on key outcomes.
+   - **Regularization**: Ridge Regression (Alpha set to 4)
+   - **Performance**:
+     - **Training R²**: 0.8325 to 0.8662
+     - **Test R²**: Ranged from -0.3861 to 0.9107
+     - **Training RMSE**: 0.1553 to 0.1741
+     - **Test RMSE**: 0.1275, with significant errors in some cases indicating potential overfitting or data issues.
+   - **Insights**: While the model showed strong predictive performance during training, test performance was variable. This suggests that further tuning or refined feature selection may improve the model’s generalizability.
 
-Performance:
+### 3. **Logistic Regression Model**  
+   - **Purpose**: Classify members based on their likelihood to donate or renew membership.
+   - **Approach**: Standard logistic regression was applied to predict binary outcomes, focusing on key predictors from the survey data.
+   - **Insights**: This model identified which factors most strongly influenced binary outcomes, such as donation behavior and membership renewal, providing actionable insights for the organization.
 
-Accuracy: 77.36%
+### 4. **K-Fold Cross-Validation**  
+   - **Purpose**: Ensure the robustness and generalizability of the models.
+   - **Approach**: K-Fold cross-validation was applied to evaluate model consistency across different subsets of the data, reducing the risk of overfitting and increasing confidence in the results.
 
-Class 0 (Majority Class):
+## **Financial Data Analysis**  
+Alongside the survey, I analyzed the organization’s financial data, focusing on cash flow and membership contributions. This analysis provided insights into revenue generation, event profitability, and donor engagement, offering practical recommendations for improving financial management.
 
-Precision: 0.78
+## **Key Findings and Recommendations**
 
-Recall: 0.95
+### 1. **Optimize Advertising Strategy**  
+   - Invest in targeted marketing, particularly to boost event attendance and membership renewals in underperforming areas. Leverage the survey’s insights into preferred communication channels (e.g., word of mouth, online marketing).
 
-F1-Score: 0.85
+### 2. **Enhance Donor Engagement**  
+   - **Personal Connection**: Highlight the impact of donations through storytelling around the organization’s mission.
+   - **Trust & Motivation**: Build donor trust through transparent communication and regular updates, emphasizing the tangible outcomes of their support.
 
-Class 1 (Minority Class):
+### 3. **Focus on Profitable Events**  
+   - Analyze successful events to identify key drivers of success. According to survey responses, younger audiences prefer low-cost, family-oriented events, while older demographics are drawn to cause-specific events. Tailoring event offerings based on these preferences can enhance attendance and satisfaction.
 
-Precision: 0.75
+### 4. **Strengthen Membership Retention**  
+   - **Targeted Engagement**: Older members with longer-term ties to the organization are more likely to renew. Tailor engagement strategies to maintain their involvement.
+   - **Youth Engagement**: Younger members are more uncertain about future membership. Developing youth-centric programs can foster long-term loyalty.
 
-Recall: 0.38
+### 5. **Community Involvement & Growth**  
+   - **Word of Mouth**: This remains a powerful tool for spreading awareness. Encourage current members to act as ambassadors for the organization to drive membership growth.
+   - **Long-Term Loyalty**: Engage younger audiences early by offering value and benefits that encourage sustained involvement.
 
-F1-Score: 0.50
+### 6. **Financial Management**  
+   - **Donation & Event Revenue**: Optimize revenue streams by focusing on high-performing events and improving donor engagement.
+   - **Diversify Income Streams**: To reduce reliance on donations and event-based income, explore additional revenue opportunities such as merchandise sales or partnerships with local businesses.
 
-Insights: The model excelled in predicting outcomes for the majority class, while it struggled with the minority class, highlighting a potential class imbalance issue that could be addressed in future model tuning.
-
-Regularized Linear Regression Model:
-
-Purpose: To assess the relationship between multiple features (such as age, event attendance, and donation history) and their impact on key outcomes.
-
-Regularization: Ridge Regression with alpha set to 4.
-
-Performance:
-
-Training R²: 0.8325 to 0.8662
-
-Test R²: Ranged from -0.3861 to 0.9107
-
-Training RMSE: 0.1553 to 0.1741
-
-Test RMSE: 0.1275 to very large errors in some cases (indicating potential overfitting or data issues in specific segments).
-
-Insights: The model provided strong predictive performance in training but showed variability in test performance, suggesting that further tuning or feature selection may be needed to improve generalization.
-
-Logistic Regression Model:
-
-Purpose: To classify members based on their likelihood to donate or renew membership.
-
-Approach: Standard logistic regression was used to model binary outcomes, focusing on key predictors identified from the survey.
-
-Performance: The model provided clear insights into which factors most strongly influenced binary outcomes, such as donation behavior or membership renewal.
-
-K-Fold Cross-Validation:
-
-Purpose: To validate the robustness and generalizability of the models.
-
-Approach: I applied K-Fold cross-validation to ensure that the models performed consistently across different subsets of the data, reducing the risk of overfitting and improving confidence in the results.
-
-Financial Data Analysis: Parallel to the survey, I analyzed the financial data of the non-profit, focusing on cash flow and membership contributions. This analysis highlighted trends in revenue generation, event profitability, and donor engagement, providing actionable insights for improving financial management.
-
-Key Findings:
-Optimize Advertising Strategy: 
-
-•Consider investing in targeted marketing, especially to boost event attendance and membership renewals, particularly in underperforming areas. This could include leveraging the preferred communication channels identified in the survey, such as word of mouth and online methods.
-
-Enhance Donor Engagement: 
-
-•Personal Connection: Emphasize the impact of donations and strengthen storytelling around the organization’s mission.
-
-•Trust & Motivation: Ensure communication highlights trust in the organization and the impact of donations. Regular updates and transparency can reinforce donor confidence and encourage continued support.
-
-Focus on Profitable Events:
-
- Analyze successful events and replicate their key elements to maximize revenue. The survey indicates a preference for low-cost, family-oriented events among younger audiences and cause-specific events for older demographics. Prioritizing these could enhance attendance and satisfaction.
-
-Strengthen Membership Retention:
-
- •Targeted Engagement: Membership renewal rates are higher among older demographics with long-term ties to the organization. Tailor engagement strategies, benefits, and communication to reinforce their connection and encourage renewals.
-
-•Youth Engagement: Younger demographics express uncertainty about future membership. Introduce programs that specifically appeal to them, potentially leading to long-term loyalty.
-
-Community Involvement & Growth:
-
-•Word of Mouth: Leverage this powerful tool for spreading awareness, as indicated by the survey. Engaging current members as ambassadors could enhance community involvement and drive membership growth.
-
-•Long-Term Loyalty: Engage younger audiences early to cultivate long-term membership. Offering early value and benefits can lead to sustained involvement over the years.
-
-Financial Management:
-
-Donation & Event Revenue: Optimize revenue streams by focusing on the most profitable events and enhancing donor engagement. Continued monitoring of income sources will help maintain financial stability.
-
-Diversify Income Streams: To reduce the reliance on donations and event-based income, consider developing additional revenue streams, such as merchandise sales or partnerships with local businesses.
-
-Conclusion: This project provided the non-profit with data-driven insights to enhance member engagement, optimize events, and improve financial stability. The findings will guide future strategies, helping the organization fulfill its mission more effectively.
-
+## **Conclusion**  
+This project provided the non-profit organization with data-driven insights to enhance member engagement, optimize events, and improve financial stability. The survey analysis, combined with financial data and predictive modeling, offered a comprehensive understanding of key areas for improvement. These findings will guide the organization’s future strategies, helping it achieve its mission more effectively and sustainably.
