@@ -1,3 +1,5 @@
+### [My  Survey Power BI Dashboard](https://app.powerbi.com/view?r=eyJrIjoiYmE3MTkyYWUtMTRiNS00ZmRlLTgyMDQtMGNlYzRhNWIwNmRiIiwidCI6IjUwNjE3YzZkLWJiY2MtNDUwYi1hY2YxLTZiYmEyNzZhNjUzOCIsImMiOjJ9&embedImagePlaceholder=true)
+
 # Financial-And-Survey-Analysis
 ## **Overview**  
 In this project, I conducted a comprehensive data analysis for a non-profit organization with the aim of improving event attendance, membership engagement, and donation levels. The analysis included designing a 27-question survey that received 264 responses and analyzing the organization’s financial data from January 2022 to August 2024. The goal was to identify key factors influencing member participation and financial contributions, ultimately guiding strategic decision-making.
