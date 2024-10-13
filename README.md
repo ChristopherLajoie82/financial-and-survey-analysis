@@ -1,12 +1,16 @@
-### [My  Survey PowerBI Dashboard](https://app.powerbi.com/view?r=eyJrIjoiYmE3MTkyYWUtMTRiNS00ZmRlLTgyMDQtMGNlYzRhNWIwNmRiIiwidCI6IjUwNjE3YzZkLWJiY2MtNDUwYi1hY2YxLTZiYmEyNzZhNjUzOCIsImMiOjJ9&embedImagePlaceholder=true)
-### [My Financial PowerBI Dashboard](https://app.powerbi.com/view?r=eyJrIjoiOWZlYWZjNzItMjAxYy00YTJhLTlmNzgtMjlkMWIzYmFjNmZmIiwidCI6IjUwNjE3YzZkLWJiY2MtNDUwYi1hY2YxLTZiYmEyNzZhNjUzOCIsImMiOjJ9&embedImagePlaceholder=true)
-
 # Financial-And-Survey-Analysis
 ## **Overview**  
 In this project, I conducted a comprehensive data analysis for a non-profit organization with the aim of improving event attendance, membership engagement, and donation levels. The analysis included designing a 27-question survey that received 264 responses and analyzing the organization’s financial data from January 2022 to August 2024. The goal was to identify key factors influencing member participation and financial contributions, ultimately guiding strategic decision-making.
 
 ## **Survey Analysis**  
 The survey focused on understanding the preferences and behaviors of the organization's members and supporters. Key areas of interest included event attendance, membership status, donation habits, and preferred communication channels. The insights gained from this analysis helped align the organization's marketing and engagement strategies with the needs and interests of its community.
+
+### [My  Survey PowerBI Dashboard](https://app.powerbi.com/view?r=eyJrIjoiYmE3MTkyYWUtMTRiNS00ZmRlLTgyMDQtMGNlYzRhNWIwNmRiIiwidCI6IjUwNjE3YzZkLWJiY2MtNDUwYi1hY2YxLTZiYmEyNzZhNjUzOCIsImMiOjJ9&embedImagePlaceholder=true)
+
+## **Financial Data Analysis**  
+Alongside the survey, I analyzed the organization’s financial data, focusing on cash flow and membership contributions. This analysis provided insights into revenue generation, event profitability, and donor engagement, offering practical recommendations for improving financial management.
+
+### [My Financial PowerBI Dashboard](https://app.powerbi.com/view?r=eyJrIjoiOWZlYWZjNzItMjAxYy00YTJhLTlmNzgtMjlkMWIzYmFjNmZmIiwidCI6IjUwNjE3YzZkLWJiY2MtNDUwYi1hY2YxLTZiYmEyNzZhNjUzOCIsImMiOjJ9&embedImagePlaceholder=true)
 
 ## **Machine Learning Models**
 
@@ -42,9 +46,6 @@ The survey focused on understanding the preferences and behaviors of the organiz
 ### 4. **K-Fold Cross-Validation**  
    - **Purpose**: Ensure the robustness and generalizability of the models.
    - **Approach**: K-Fold cross-validation was applied to evaluate model consistency across different subsets of the data, reducing the risk of overfitting and increasing confidence in the results.
-
-## **Financial Data Analysis**  
-Alongside the survey, I analyzed the organization’s financial data, focusing on cash flow and membership contributions. This analysis provided insights into revenue generation, event profitability, and donor engagement, offering practical recommendations for improving financial management.
 
 ## **Key Findings and Recommendations**
 
